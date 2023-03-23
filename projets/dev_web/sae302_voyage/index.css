@@ -1,0 +1,465 @@
+/* ------------ POLICES ------------- */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* ----------- GENERAL ------------ */
+html {
+    scroll-behavior: smooth;
+}
+
+*{box-sizing: border-box;
+}
+    body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+/* --------------------- HEADER ---------------------- */
+header {
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    justify-content: space-between;
+}
+header > ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+header > ul li a {
+    margin-left: 15px;
+    font-family: 'Oswald';
+    font-size: 25px;
+    text-decoration: none;
+    color: #222222;
+    background-color: #d3d3d3;
+    padding: 0.5vw;
+    border-radius: 10px;
+    text-shadow: #22222289 3px 3px 10px;
+    box-shadow: #22222289 5px 5px 10px;
+}
+header > ul li a:hover {
+    box-shadow: #22222289 2px 2px 10px inset;
+    transition: 1s;
+}
+header > nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+header > nav ul li {
+    margin: 0 15px 0 0;
+}
+header > nav img {
+    width: 50px;
+}
+header > ul li:nth-child(1) img {
+    width: 80px;
+}
+header nav li:nth-child(2) a{
+    display: flex;
+    align-items: center;
+    color: #222222;
+    text-decoration: none;
+    font-family: 'Oswald';
+    font-size: 1.5vw;
+    background-color: #d3d3d3;
+    padding: 0.3vw 0 0.3vw 0.5vw;
+    border-radius: 10px;
+    text-shadow: #22222289 3px 3px 10px;
+    box-shadow: #22222289 5px 5px 10px;
+}
+header nav li:nth-child(2) a:hover {
+    box-shadow: #22222289 2px 2px 10px inset;
+    transition: 1s;
+}
+header li:nth-child(2) img {
+    width: 40px;
+}
+/* ------------- SLIDER -------------- */
+.slider {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.slider > a img {
+    transform: rotate(180deg);
+    width: 6vw;
+    position: absolute;
+    top: 550px;
+    right: 50%;
+}
+.slides {
+    width: calc(1800px*3);
+    animation: glisse 15s infinite; 
+}
+.slide {
+    float: left;
+}
+
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-1800px);
+    }
+    43% {
+        transform: translateX(-1800px);
+    }
+    66% {
+        transform: translateX(-3600px);
+    }
+    76% {
+        transform: translateX(-3600px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* ------------------------------- MAIN ---------------------------------- */
+.voyages {
+    display: flex;
+}
+/* --------------------- HAUT ------------------------ */
+.haut {
+    display: flex;
+}
+/* --------------- FORMULAIRE ---------------- */
+.voyage {
+    width: 25%;
+    font-size: 2vw;
+    font-family: 'Oswald', sans-serif;
+    padding: 20px;
+    height: 100%;
+}
+.voyage > nav {
+    width: 100%;
+}
+.voyage > nav ul {
+    display: flex;
+
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+}
+.voyage > nav ul li {
+    border: solid #222222 2px;
+    text-align: center;
+}
+.voyage > nav ul li:nth-child(1){
+    width: 40%;
+}
+.voyage > nav ul li:nth-child(2){
+    width: 15%;
+}
+.voyage > nav ul li:nth-child(3){
+    width: 20%;
+}
+.voyage > nav ul li:nth-child(3){
+    width: 25%;
+}
+/* -------------- POUR QUE LE NAV DU FORMULAIRE RESTE ACTIF QUAND ON CLIQUE DESSUS (avec du JS) --------------- */
+.active {
+    background: #949494;
+    border: solid #222222 2px;
+}
+.active a {
+    color: aliceblue;
+}
+.voyage nav li:hover {
+    background: #949494;
+    border: solid #222222 2px;
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+.voyage > nav a {
+    text-decoration: none;
+    color: black;
+}
+.voyage > form {
+    display: flex;
+    flex-direction: column;
+    background-color: #949494;
+    padding: 10px;
+}
+.voyage > form label {
+    margin-top: 1.5vw;
+    font-size: 1.6vw;
+}
+.voyage > form input,select {
+    margin-top: 15px;
+}
+.voyage > form select {
+    background-color: #222222;
+    color: white;
+}
+form > input:nth-child(2) {
+    background-image:url(images/avion.png);
+    background-position:left;
+    background-repeat:no-repeat;
+    background-size: 30px;
+    padding: 10px 10px 10px 40px;
+    font-size: 1.2vw;
+    border: none;
+}
+form > select:nth-child(3) {
+    background-image:url(images/avatar.png);
+    background-position:left;
+    background-repeat:no-repeat;
+    background-size: 30px;
+    padding: 10px 10px 10px 40px;
+    font-size: 1.2vw;
+    border: none;
+}
+form > input:nth-child(5) {
+    background-image:url(images/position.png);
+    background-position:left;
+    background-repeat:no-repeat;
+    background-size: 30px;
+    padding: 10px 10px 10px 40px;
+    font-size: 1.2vw;
+    border: none;
+}
+form > select:nth-child(6) {
+    background-image:url(images/chair.png);
+    background-position:left;
+    background-repeat:no-repeat;
+    background-size: 30px;
+    padding: 10px 10px 10px 40px;
+    font-size: 1.2vw;
+    border: none;
+}
+form > div:nth-child(7){
+    display: flex;
+    width: 100%;
+    /* justify-content: space-around; */
+}
+
+.agenda {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 1vw;
+}
+form input[type=date] {
+    padding: 1vw;
+    font-size: 1vw;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+}
+form > a {
+    background-image:url(images/ajustement.png);
+    background-position:left;
+    background-repeat:no-repeat;
+    background-size: 30px;
+    padding: 10px 10px 10px 40px;
+    font-size: 1.2vw;
+    border: none;
+    color: #FFF;
+    background-color: #222222;
+    max-width: max-content;
+    margin-top: 20px;
+    text-decoration: none;
+}
+form > a:hover {
+    background-color: #5b5b5b;
+    transition: 0.2s;
+}
+form input[type=submit] {
+    padding: 1vw;
+    /* width: 200px; */
+    font-size: 2vw;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    color: #222222;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    text-shadow: #22222289 3px 3px 10px;
+    box-shadow: #22222289 5px 5px 10px;
+}
+form input[type=submit]:hover {
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: #22222289 2px 2px 10px inset;
+
+}
+form > div:nth-child(9) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* --------------------- PARTIR EN EUROPE ----------------------- */
+.infos h1 {
+    font-size: 2.5vw;
+    font-family: 'Oswald';
+    border-left: solid 3px green;
+    padding-left: 15px;
+}
+section.europe{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+article.voyage-grid {
+    border: solid #222222 1px;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+article .reserver {
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    font-size: 2vw;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald';
+    color: #df3c3c;
+}
+article .reserver:hover{
+    background-color: #22222295;
+    opacity: 1;
+    transition: 0.5s;
+    
+}
+article.voyage-grid img {
+    width: 100%;
+}
+article.voyage-grid .prix {
+    margin: -30px 0 0 75%;
+    background-color: whitesmoke;
+    font-family: 'Oswald';
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border: #222222 solid 2px;
+    border-radius: 5px;
+    max-width: max-content;
+}
+
+
+
+
+/* --------------------- QUI SOMMES NOUS ------------------------ */
+
+.quisommesnous{
+    display: flex;
+    align-items: center;
+    width: 75%;
+    /* margin-left: 25%; */
+    padding: 30px 0;
+}
+.quisommesnous h1 {
+    font-size: 2.5vw;
+    font-family: 'Oswald';
+    border-left: solid 3px green;
+    padding-left: 15px;
+}
+.quisommesnous p {
+    width: 90%;
+}
+.quisommesnous img {
+    width: 10vw;
+}
+section.quisommesnous > div:nth-child(1){
+    width: 60%;
+}
+section.quisommesnous > div:nth-child(2){
+    width: 40%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+section.quisommesnous > div:nth-child(2) > img {
+    margin-left: 20px;
+}
+.i12 {
+    display: flex;
+    flex-direction: column;
+}
+.i12 img:nth-child(1){
+    margin-bottom: 20px;
+}
+
+/* ------------------------------------ FOOTER ------------------------------------ */
+footer {
+    width: 75%;
+    margin-left: 25%;
+}
+footer p, h2{
+    font-family: 'Oswald';
+    color: #222222;
+}
+.ligne1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.villes {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.villes > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.villes img {
+    width: 110px;
+    margin-right: 65px;
+}/*
+.reseaux {
+    width: 15%;
+}*/
+.reseaux > ul {
+    display: flex;
+    justify-content: space-around;
+}
+.reseaux img {
+    width: 4vw;
+}
+.liens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 50px 0;
+    width: 100%;
+}
+.liens a {
+    text-decoration: none;
+    font-family: 'Oswald';
+    color: #222222;
+}
+.liens p {
+    margin: 0 15px;
+}
+
+.zoom {
+    transition: transform .1s;
+
+}
+
+.zoom:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.12);
+    }

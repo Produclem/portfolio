@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio - Clément Guérin</title>
+</head>
+
+<body>
+    <div class="h-100 p-0 container-fluid">
+        <header id="debut" class="row d-flex align-items-center p-1">
+            <h1 class="col-lg-6 col-4 m-0">Clmt</h1>
+            <nav class="col-lg-6 col-8 mt-md-2">
+                <ul class="d-flex justify-content-around m-0">
+                    <li class="d-none d-md-block"><a href="#projets">Projets</a></li>
+                    <li class="d-none d-md-block"><a href="#competences">Compétences</a></li>
+                    <li class="d-none d-md-block"><a href="#propos">À propos</a></li>
+                    <li class="d-none d-md-block"><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="d-flex justify-content-end m-0">
+                    <li class="d-md-none">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#menuBurger" aria-controls="menuBurger">
+                            <img id="iburger" src="images/logo_burger.png" alt="MENU">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="offcanvas offcanvas-end" id="menuBurger" aria-labelledby="menuBurgerLabel">
+                <div class="offcanvas-header">
+                    <h4 class="offcanvas-title" id="menuBurgerLabel">MENU</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="menu-a" href="#projets">Projets</a></li>
+                        <li class="nav-item"><a class="menu-a" href="#competences">Compétences</a></li>
+                        <li class="nav-item"><a class="menu-a" href="#propos">À propos</a></li>
+                        <li class="nav-item"><a class="menu-a" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="">
+            <div class="home row w-100 m-0">
+                <div class="gauche d-md-flex align-items-center justify-content-center col-md-6 d-none p-0">
+                    <div class="float d-flex p-0">
+                        <div class="floating logo_html"><img src="images/logo_html.png" alt=""></div>
+                        <div class="floating2 logo_php"><img src="images/logo_php.png" alt=""></div>
+                        <div class="floating3 logo_css"><img src="images/logo_css.png" alt=""></div>
+                        <div class="floating2 logo_sql"><img src="images/logo_sql.png" alt=""></div>
+                        <div class="floating logo_js"><img src="images/logo_js.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center col-md-6 col-12 p-0">
+                    <div class="clement">
+                        <h1 class="floating4">Clément</h1>
+                        <h3 class="floating4">Développeur web</h3>
+                        <div class="rond floating3"></div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <a href="#projets" class="p-0">
+                        <div class="fleche"></div>
+                    </a>
+                </div>
+            </div>
+            <section id="projets" class="projets row">
+                <div class="col-12 d-sm-none d-flex justify-content-center">
+                    <h2 class="m-0">Projets</h2>
+                </div>
+                <div class="col-12 d-none d-sm-flex">
+                    <h2>Projets</h2>
+                </div>
+                <div class="menu_projets justify-content-center d-none d-md-flex col-12">
+                    <nav class="py-2">
+                        <ul class="d-flex justify-content-around align-items-center m-0 p-0 rounded-pill p-2 px-4 pb-0">
+                            <li class="navActive"><a href="#">TOUT</a></li>
+                            <li class=""><a href="#">DEV WEB</a></li>
+                            <li class=""><a href="#">AUDIOVISUEL</a></li>
+                            <li class=""><a href="#">DESIGN</a></li>
+                            <div class="indicator rounded-pill"></div>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="d-md-none d-flex justify-content-center col-12">
+                    <select id="menu_projets_select" class="py-2 rounded-pill px-4">
+                        <option value="1"><a href="">TOUT</a></option>
+                        <option value="2"><a href="">DEV WEB</a></option>
+                        <option value="3"><a href="">AUDIOVISUEL</a></option>
+                        <option value="4"><a href="">DESIGN</a></option>
+                    </select>
+                </div>
+
+                <!-- ------------------ PARTIE IMAGES TOUT ------------------ -->
+                <div class="row images_tout pe-0 ps-4">
+                    <div class="col-4 d-flex flex-column align-items-center">
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/dev_web/sae3012.png" alt="Projet tendance or not capture d'écran">
+                            <a href="projets/dev_web/sae3012/index.php" target="_blank">
+                                <div class="flou">Projet Tendance Or Not</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/ville_imaginaire.jpg"
+                                alt="Projet ville imaginaire capture d'écran">
+                            <a href="projets/design/ville_imaginaire.jpg" target="_blank">
+                            <div class="flou">Ville imaginaire<br>PHOTOSHOP</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center imageMot">
+                            <img src="projets/design/image_des_mots.png" alt="Image des mots capture d'écran">
+                            <a href="projets/design/image_des_mots.pdf" target="_blank">
+                            <div class="flou">Image des mots<br>INDESIGN</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/audiovisuel/shooting_photo.png"
+                                alt="Shooting photo d'architecture capture d'écran">
+                            <a href="projets/audiovisuel/shooting_photo.pdf" target="_blank">
+                                <div class="flou">Shooting photo d'architecture</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/autoportrait.png"
+                                alt="Projet autoportrait illustrator capture d'écran">
+                            <a href="projets/design/autoportrait.pdf" target="_blank">
+                                <div class="flou">Autoportrait fait avec<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/affiche_indesign_sentiment.png"
+                                alt="Affiche indesign sentiment capture d'écran">
+                            <a href="projets/design/affiche_indesign_sentiment.pdf" target="_blank">
+                                <div class="flou">Affiche sentiment plaisir<br>INDESIGN</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex flex-column align-items-center">
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/affiche_culture_cassandre.png"
+                                alt="affiche culture cassandre le camescope capture d'écran">
+                            <a href="projets/design/culture_art_cassandre.pdf" target="_blank">
+                                <div class="flou">Affiche cassandre "le camescope"<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/dev_web/backOffice.png" alt="Projet d'un back office capture d'écran">
+                            <a href="projets/dev_web/backOffice.png" target="_blank">
+                                <div class="flou">Projet Back Office</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/charte_graphique_canaplato.png"
+                                alt="Charte graphique Canaplato capture d'écran">
+                            <a href="projets/design/canaplato_charte_graphique.pdf" target="_blank">
+                                <div class="flou">Charte graphique du projet<br>CANAPLATO</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/affiche_medieval.png"
+                                alt="Affiche exposition medieval capture d'écran">
+                            <a href="projets/design/affiche_medieval.pdf" target="_blank">
+                                <div class="flou">Affiche exposition medieval<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="col-4 d-flex flex-column align-items-center">
+                            <div class="div_img d-flex justify-content-center align-items-center">
+                                <img src="projets/dev_web/algogo.png" alt="Projet pizzeria algogo capture d'écran">
+                                <a href="projets/dev_web/algogo.png" target="_blank">
+                                    <div class="flou">Projet Pizzeria AlGogo</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/moodboard_bauhaus.png" alt="Moodboard Bauhaus capture d'écran">
+                            <a href="projets/design/moodboard_bauhaus.pdf" target="_blank">
+                                <div class="flou">Moodboard domaine Bauhaus<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex flex-column align-items-center">
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/audiovisuel/miniature.jpg"
+                                alt="Reportage surcharge de travail capture d'écran">
+                            <a href="https://youtu.be/uf3wu1dIxqw" target="_blank">
+                                <div class="flou">Reportage surcharge de travail<br>CANAPLATO</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/moodboard_canaplato.png"
+                                alt="Moodboard du projet Canaplato capture d'écran">
+                            <a href="projets/design/canaplato_moodboard.pdf" target="_blank">
+                                <div class="flou">Moodboard du projet Canaplato<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/dev_web/sae302_voyage.png" alt="Projet web voyage capture d'écran">
+                            <a href="projets/dev_web/sae302_voyage/index.html" target="_blank">
+                                <div class="flou">Projet Web Voyage</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/pictogrammes_londres.png"
+                                alt="Pictogrammes de la ville de Londres illustrator capture d'écran">
+                            <a href="projets/design/pictogrammes_londres.pdf" target="_blank">
+                                <div class="flou">Pictogrammes ville de Londres<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/audiovisuel/video_drums_presentation.png"
+                                alt="Video de presentation Drums english capture d'écran">
+                            <a href="projets/audiovisuel/SAE104_batterie.mp4" target="_blank">
+                                <div class="flou">Drums video presentation (english)</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/affiche_antiquite.png"
+                                alt="Affiche exposition antiquité capture d'écran">
+                            <a href="projets/design/affiche_antique.pdf" target="_blank">
+                                <div class="flou">Affiche exposition antiquité<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/depliant_printemps_typo_indesign.png"
+                                alt="Depliant Printemps de la Typo indesign capture d'écran">
+                            <a href="projets/design/depliant_printemps_typo_indesign.pdf" target="_blank">
+                                <div class="flou">Depliant Printemps de la Typo<br>INDESIGN</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------------------------------------------------- -->
+
+                <!-- ------------------ PARTIE IMAGES TOUT MOBILE ------------------ -->
+                <div class="row images_tout_mobile pe-0 ps-4">
+                    <div class="col-12 d-flex flex-column align-items-center">
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/dev_web/sae3012.png" alt="Projet tendance or not capture d'écran">
+                            <a href="projets/dev_web/sae3012/index.php" target="_blank">
+                                <div class="flou">Projet Tendance Or Not</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/ville_imaginaire.jpg"
+                                alt="Projet ville imaginaire capture d'écran">
+                            <a href="projets/design/ville_imaginaire.jpg" target="_blank">
+                            <div class="flou">
+                                Ville imaginaire<br>PHOTOSHOP</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center imageMot">
+                            <img src="projets/design/image_des_mots.png" alt="Image des mots capture d'écran">
+                            <a href="projets/design/image_des_mots.pdf" target="_blank">
+                            <div class="flou">Image des mots<br>INDESIGN</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/audiovisuel/shooting_photo.png"
+                                alt="Shooting photo d'architecture capture d'écran">
+                            <a href="projets/audiovisuel/shooting_photo.pdf" target="_blank">
+                                <div class="flou">Shooting photo d'architecture</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/autoportrait.png"
+                                alt="Projet autoportrait illustrator capture d'écran">
+                            <a href="projets/design/autoportrait.pdf" target="_blank">
+                                <div class="flou">Autoportrait fait avec<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/affiche_indesign_sentiment.png"
+                                alt="Affiche indesign sentiment capture d'écran">
+                            <a href="projets/design/affiche_indesign_sentiment.pdf" target="_blank">
+                                <div class="flou">Affiche sentiment plaisir<br>INDESIGN</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/affiche_culture_cassandre.png"
+                                alt="affiche culture cassandre le camescope capture d'écran">
+                            <a href="projets/design/culture_art_cassandre.pdf" target="_blank">
+                                <div class="flou">Affiche cassandre "le camescope"<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/dev_web/backOffice.png" alt="Projet d'un back office capture d'écran">
+                            <a href="projets/dev_web/backOffice.png" target="_blank">
+                                <div class="flou">Projet Back Office</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/charte_graphique_canaplato.png"
+                                alt="Charte graphique Canaplato capture d'écran">
+                            <a href="projets/design/canaplato_charte_graphique.pdf" target="_blank">
+                                <div class="flou">Charte graphique du projet<br>CANAPLATO</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/affiche_medieval.png"
+                                alt="Affiche exposition medieval capture d'écran">
+                            <a href="projets/design/affiche_medieval.pdf" target="_blank">
+                                <div class="flou">Affiche exposition medieval<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="col-4 d-flex flex-column align-items-center">
+                            <div class="div_img d-flex justify-content-center align-items-center">
+                                <img src="projets/dev_web/algogo.png" alt="Projet pizzeria algogo capture d'écran">
+                                <a href="projets/dev_web/algogo.png" target="_blank">
+                                    <div class="flou">Projet Pizzeria AlGogo</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/moodboard_bauhaus.png" alt="Moodboard Bauhaus capture d'écran">
+                            <a href="projets/design/moodboard_bauhaus.pdf" target="_blank">
+                                <div class="flou">Moodboard domaine Bauhaus<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/audiovisuel/miniature.jpg"
+                                alt="Reportage surcharge de travail capture d'écran">
+                            <a href="https://youtu.be/uf3wu1dIxqw" target="_blank">
+                                <div class="flou">Reportage surcharge de travail<br>CANAPLATO</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/moodboard_canaplato.png"
+                                alt="Moodboard du projet Canaplato capture d'écran">
+                            <a href="projets/design/canaplato_moodboard.pdf" target="_blank">
+                                <div class="flou">Moodboard du projet Canaplato<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/dev_web/sae302_voyage.png" alt="Projet web voyage capture d'écran">
+                            <a href="projets/dev_web/sae302_voyage/index.html" target="_blank">
+                                <div class="flou">Projet Web Voyage</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/pictogrammes_londres.png"
+                                alt="Pictogrammes de la ville de Londres illustrator capture d'écran">
+                            <a href="projets/design/pictogrammes_londres.pdf" target="_blank">
+                                <div class="flou">Pictogrammes ville de Londres<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/audiovisuel/video_drums_presentation.png"
+                                alt="Video de presentation Drums english capture d'écran">
+                            <a href="projets/audiovisuel/SAE104_batterie.mp4" target="_blank">
+                                <div class="flou">Drums video presentation (english)</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/affiche_antiquite.png"
+                                alt="Affiche exposition antiquité capture d'écran">
+                            <a href="projets/design/affiche_antique.pdf" target="_blank">
+                                <div class="flou">Affiche exposition antiquité<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/depliant_printemps_typo_indesign.png"
+                                alt="Depliant Printemps de la Typo indesign capture d'écran">
+                            <a href="projets/design/depliant_printemps_typo_indesign.pdf" target="_blank">
+                                <div class="flou">Depliant Printemps de la Typo<br>INDESIGN</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------------------------------------------------- -->
+
+                <!-- ------------------ PARTIE IMAGES DEV WEB ------------------ -->
+                <div class="row images_dev pe-0 ps-4">
+                    <div class="col-4 d-flex flex-column align-items-center">
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/dev_web/algogo.png" alt="Projet pizzeria algogo capture d'écran">
+                            <a href="projets/dev_web/algogo.png" target="_blank">
+                                <div class="flou">Projet Pizzeria AlGogo</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex flex-column align-items-center">
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/dev_web/sae3012.png" alt="Projet tendance or not capture d'écran">
+                            <a href="projets/dev_web/sae3012/index.php" target="_blank">
+                                <div class="flou">Projet Tendance Or Not</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/dev_web/backOffice.png" alt="Projet d'un back office capture d'écran">
+                            <a href="projets/dev_web/backOffice.png" target="_blank">
+                                <div class="flou">Projet Back Office</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex flex-column align-items-center">
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/dev_web/sae302_voyage.png" alt="Projet web voyage capture d'écran">
+                            <a href="projets/dev_web/sae302_voyage/index.html" target="_blank">
+                                <div class="flou">Projet Web Voyage</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------------------ PARTIE IMAGES DEV WEB MOBILE ------------------ -->
+                <div class="row images_dev_mobile pe-0 ps-4">
+                    <div class="col-12 d-flex flex-column align-items-center">
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/dev_web/algogo.png" alt="Projet pizzeria algogo capture d'écran">
+                            <a href="projets/dev_web/algogo.png" target="_blank">
+                                <div class="flou">Projet Pizzeria AlGogo</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/dev_web/sae3012.png" alt="Projet tendance or not capture d'écran">
+                            <a href="projets/dev_web/sae3012/index.php" target="_blank">
+                                <div class="flou">Projet Tendance Or Not</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/dev_web/backOffice.png" alt="Projet d'un back office capture d'écran">
+                            <a href="projets/dev_web/backOffice.png" target="_blank">
+                                <div class="flou">Projet Back Office</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/dev_web/sae302_voyage.png" alt="Projet web voyage capture d'écran">
+                            <a href="projets/dev_web/sae302_voyage/index.html" target="_blank">
+                                <div class="flou">Projet Web Voyage</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------ PARTIE IMAGES AUDIOVISUEL ------------------ -->
+                <div class="row images_audiovisuel pe-0 ps-4">
+                    <div class="col-4 d-flex flex-column align-items-center">
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/audiovisuel/miniature.jpg"
+                                alt="Reportage surcharge de travail capture d'écran">
+                            <a href="https://youtu.be/uf3wu1dIxqw" target="_blank">
+                                <div class="flou">Reportage surcharge de travail<br>CANAPLATO</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex flex-column align-items-center">
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/audiovisuel/video_drums_presentation.png"
+                                alt="Video de presentation Drums english capture d'écran">
+                            <a href="projets/audiovisuel/SAE104_batterie.mp4" target="_blank">
+                                <div class="flou">Drums video presentation (english)</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex flex-column align-items-center">
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/audiovisuel/shooting_photo.png"
+                                alt="Shooting photo d'architecture capture d'écran">
+                            <a href="projets/audiovisuel/shooting_photo.pdf" target="_blank">
+                                <div class="flou">Shooting photo d'architecture</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------------------ PARTIE IMAGES AUDIOVISUEL MOBILE ------------------ -->
+                <div class="row images_audiovisuel_mobile pe-0 ps-4">
+                    <div class="col-12 d-flex flex-column align-items-center">
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/audiovisuel/miniature.jpg"
+                                alt="Reportage surcharge de travail capture d'écran">
+                            <a href="https://youtu.be/uf3wu1dIxqw" target="_blank">
+                                <div class="flou">Reportage surcharge de travail<br>CANAPLATO</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/audiovisuel/video_drums_presentation.png"
+                                alt="Video de presentation Drums english capture d'écran">
+                            <a href="projets/audiovisuel/SAE104_batterie.mp4" target="_blank">
+                                <div class="flou">Drums video presentation (english)</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/audiovisuel/shooting_photo.png"
+                                alt="Shooting photo d'architecture capture d'écran">
+                            <a href="projets/audiovisuel/shooting_photo.pdf" target="_blank">
+                                <div class="flou">Shooting photo d'architecture</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------ PARTIE IMAGES DESIGN ------------------ -->
+                <div class="row images_design pe-0 ps-4">
+                    <div class="col-4 d-flex flex-column align-items-center">
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/ville_imaginaire.jpg"
+                                alt="Projet ville imaginaire capture d'écran">
+                            <a href="projets/design/ville_imaginaire.jpg" target="_blank">
+                                <div class="flou">Ville imaginaire<br>PHOTOSHOP</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/image_des_mots.png" alt="Image des mots capture d'écran">
+                            <a href="projets/design/image_des_mots.pdf" target="_blank">
+                                <div class="flou">Image des mots<br>INDESIGN</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/autoportrait.png"
+                                alt="Projet autoportrait illustrator capture d'écran">
+                            <a href="projets/design/autoportrait.pdf" target="_blank">
+                                <div class="flou">Autoportrait fait avec<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/affiche_indesign_sentiment.png"
+                                alt="Affiche indesign sentiment capture d'écran">
+                            <a href="projets/design/affiche_indesign_sentiment.pdf" target="_blank">
+                                <div class="flou">Affiche sentiment plaisir<br>INDESIGN</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex flex-column align-items-center">
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/affiche_culture_cassandre.png"
+                                alt="affiche culture cassandre le camescope capture d'écran">
+                            <a href="projets/design/culture_art_cassandre.pdf" target="_blank">
+                                <div class="flou">Affiche cassandre "le camescope"<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/charte_graphique_canaplato.png"
+                                alt="Charte graphique Canaplato capture d'écran">
+                            <a href="projets/design/canaplato_charte_graphique.pdf" target="_blank">
+                                <div class="flou">Charte graphique du projet<br>CANAPLATO</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/affiche_medieval.png"
+                                alt="Affiche exposition medieval capture d'écran">
+                            <a href="projets/design/affiche_medieval.pdf" target="_blank">
+                                <div class="flou">Affiche exposition medieval<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/moodboard_bauhaus.png" alt="Moodboard Bauhaus capture d'écran">
+                            <a href="projets/design/moodboard_bauhaus.pdf" target="_blank">
+                                <div class="flou">Moodboard domaine Bauhaus<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex flex-column align-items-center">
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/moodboard_canaplato.png"
+                                alt="Moodboard du projet Canaplato capture d'écran">
+                            <a href="projets/design/canaplato_moodboard.pdf" target="_blank">
+                                <div class="flou">Moodboard du projet Canaplato<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/pictogrammes_londres.png"
+                                alt="Pictogrammes de la ville de Londres illustrator capture d'écran">
+                            <a href="projets/design/pictogrammes_londres.pdf" target="_blank">
+                                <div class="flou">Pictogrammes ville de Londres<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/affiche_antiquite.png"
+                                alt="Affiche exposition antiquité capture d'écran">
+                            <a href="projets/design/affiche_antique.pdf" target="_blank">
+                                <div class="flou">Affiche exposition antiquité<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/depliant_printemps_typo_indesign.png"
+                                alt="Depliant Printemps de la Typo indesign capture d'écran">
+                            <a href="projets/design/depliant_printemps_typo_indesign.pdf" target="_blank">
+                                <div class="flou">Depliant Printemps de la Typo<br>INDESIGN</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------------------ PARTIE IMAGES DESIGN MOBILE ------------------ -->
+                <div class="row images_design_mobile pe-0 ps-4">
+                    <div class="col-12 d-flex flex-column align-items-center">
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/ville_imaginaire.jpg"
+                                alt="Projet ville imaginaire capture d'écran">
+                            <a href="projets/design/ville_imaginaire.jpg" target="_blank">
+                                <div class="flou">Ville imaginaire<br>PHOTOSHOP</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/image_des_mots.png" alt="Image des mots capture d'écran">
+                            <a href="projets/design/image_des_mots.pdf" target="_blank">
+                                <div class="flou">Image des mots<br>INDESIGN</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/autoportrait.png"
+                                alt="Projet autoportrait illustrator capture d'écran">
+                            <a href="projets/design/autoportrait.pdf" target="_blank">
+                                <div class="flou">Autoportrait fait avec<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/affiche_indesign_sentiment.png"
+                                alt="Affiche indesign sentiment capture d'écran">
+                            <a href="projets/design/affiche_indesign_sentiment.pdf" target="_blank">
+                                <div class="flou">Affiche sentiment plaisir<br>INDESIGN</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/affiche_culture_cassandre.png"
+                                alt="affiche culture cassandre le camescope capture d'écran">
+                            <a href="projets/design/culture_art_cassandre.pdf" target="_blank">
+                                <div class="flou">Affiche cassandre "le camescope"<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/charte_graphique_canaplato.png"
+                                alt="Charte graphique Canaplato capture d'écran">
+                            <a href="projets/design/canaplato_charte_graphique.pdf" target="_blank">
+                                <div class="flou">Charte graphique du projet<br>CANAPLATO</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/affiche_medieval.png"
+                                alt="Affiche exposition medieval capture d'écran">
+                            <a href="projets/design/affiche_medieval.pdf" target="_blank">
+                                <div class="flou">Affiche exposition medieval<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/moodboard_bauhaus.png" alt="Moodboard Bauhaus capture d'écran">
+                            <a href="projets/design/moodboard_bauhaus.pdf" target="_blank">
+                                <div class="flou">Moodboard domaine Bauhaus<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/moodboard_canaplato.png"
+                                alt="Moodboard du projet Canaplato capture d'écran">
+                            <a href="projets/design/canaplato_moodboard.pdf" target="_blank">
+                                <div class="flou">Moodboard du projet Canaplato<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/pictogrammes_londres.png"
+                                alt="Pictogrammes de la ville de Londres illustrator capture d'écran">
+                            <a href="projets/design/pictogrammes_londres.pdf" target="_blank">
+                                <div class="flou">Pictogrammes ville de Londres<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/affiche_antiquite.png"
+                                alt="Affiche exposition antiquité capture d'écran">
+                            <a href="projets/design/affiche_antique.pdf" target="_blank">
+                                <div class="flou">Affiche exposition antiquité<br>ILLUSTRATOR</div>
+                            </a>
+                        </div>
+                        <div class="div_img d-flex justify-content-center align-items-center">
+                            <img src="projets/design/depliant_printemps_typo_indesign.png"
+                                alt="Depliant Printemps de la Typo indesign capture d'écran">
+                            <a href="projets/design/depliant_printemps_typo_indesign.pdf" target="_blank">
+                                <div class="flou">Depliant Printemps de la Typo<br>INDESIGN</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="competences" class="competences container-fluid">
+                <div class="col-12 d-sm-none d-flex justify-content-center">
+                    <h2 class="m-0">Compétences</h2>
+                </div>
+                <div class="col-12 d-none d-sm-flex">
+                    <h2>Compétences</h2>
+                </div>
+                <!-- Quand l'écran passe au dessus de 992px de largeur : les competences se mettent en colonnes en vis a vis  -->
+                <div class="colonne1 row d-none d-lg-flex justify-content-around">
+                    <div class="col-gauche col-xl-5 col-6 d-flex flex-column align-items-center mt-4">
+                        <div class="dev-front carte">
+                            <div class="titre d-flex align-items-center mt-3 ms-3">
+                                <div><img src="images/logo_devF.png" alt="logo dev front"></div>
+                                <h4>DEV<br>FRONT</h4>
+                            </div>
+                            <div class="images_app d-flex justify-content-around align-items-center mt-4">
+                                <div><img src="images/logo_html_app.png" alt="html">
+                                    <p>HTML</p>
+                                </div>
+                                <div><img src="images/logo_css_app.png" alt="css">
+                                    <p>CSS</p>
+                                </div>
+                                <div><img src="images/logo_js_app.png" alt="js">
+                                    <p>JS</p>
+                                </div>
+                                <!-- <div><img src="images/logo_btp_app.png" alt="bootstrap"></div> -->
+                            </div>
+                        </div>
+                        <div class="design carte">
+                            <div class="titre d-flex align-items-center mt-3 ms-3">
+                                <img src="images/logo_design.png" alt="logo design">
+                                <h4>DESIGN</h4>
+                            </div>
+                            <div class="images_app2 d-flex justify-content-around align-items-center mt-4">
+                                <div><img src="images/logo_illustrator.png" alt="illustrator">
+                                    <p>ILLUSTRATOR</p>
+                                </div>
+                                <div><img src="images/logo_indesign.png" alt="indesign">
+                                    <p>INDESIGN</p>
+                                </div>
+                                <div><img src="images/logo_photoshop.png" alt="photoshop">
+                                    <p>PHOTOSHOP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 d-none d-xxl-flex justify-content-center">
+                        <div class="lignes">
+                            <div id="ligneD"></div>
+                            <div id="ligneH1" class="ligneH"></div>
+                            <div id="ligneH2" class="ligneH"></div>
+                            <div id="ligneH3" class="ligneH"></div>
+                            <div id="ligneH4" class="ligneH"></div>
+                        </div>
+                    </div>
+                    <div class="col-droite col-xl-5 col-6 d-flex flex-column align-items-center">
+                        <div class="dev-back carte">
+                            <div class="titre d-flex align-items-center mt-3 ms-3">
+                                <img src="images/logo_devB.png" alt="logo dev back">
+                                <h4>DEV<br>BACK</h4>
+                            </div>
+                            <div class="images_app3 d-flex justify-content-around align-items-center mt-4">
+                                <div><img src="images/logo_php_app.png" alt="PHP">
+                                    <p>PHP</p>
+                                </div>
+                                <div><img src="images/logo_sql_app.png" alt="MySQL">
+                                    <p>MySQL</p>
+                                </div>
+                                <div><img src="images/logo_python.png" alt="python">
+                                    <p>PYTHON</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="audiovisuel carte">
+                            <div class="titre d-flex align-items-center mt-3 ms-3">
+                                <img src="images/logo_cam.png" alt="logo audiovisuel">
+                                <h4>AUDIOVISUEL</h4>
+                            </div>
+                            <div class="images_app4 d-flex justify-content-around align-items-center mt-4">
+                                <div><img src="images/logo_premiere.png" alt="premiere pro">
+                                    <p>PREMIERE PRO</p>
+                                </div>
+                                <div><img src="images/logo_after.png" alt="after effect">
+                                    <p>AFTER EFFECT</p>
+                                </div>
+                                <div><img src="images/logo_audition.png" alt="audition">
+                                    <p>AUDITION</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quand l'écran passe en dessous de 992px de largeur : les competences se mettent en ligne  -->
+                <div class="colonne2 row d-lg-none d-flex justify-content-around">
+                    <div class="col-12 d-flex flex-column align-items-center justify-content-center mt-4">
+                        <div class="dev-front2 carte">
+                            <div class="titre d-flex align-items-center mt-3 ms-3">
+                                <div><img src="images/logo_devF.png" alt="logo dev front"></div>
+                                <h4>DEV<br>FRONT</h4>
+                            </div>
+                            <div class="images_app d-flex justify-content-around align-items-center mt-4">
+                                <div><img src="images/logo_html_app.png" alt="html">
+                                    <p>HTML</p>
+                                </div>
+                                <div><img src="images/logo_css_app.png" alt="css">
+                                    <p>CSS</p>
+                                </div>
+                                <div><img src="images/logo_js_app.png" alt="js">
+                                    <p>JS</p>
+                                </div>
+                                <!-- <div><img src="images/logo_btp_app.png" alt="bootstrap"></div> -->
+                            </div>
+                        </div>
+                        <div class="dev-back2 carte">
+                            <div class="titre d-flex align-items-center mt-3 ms-3">
+                                <img src="images/logo_devB.png" alt="logo dev back">
+                                <h4>DEV<br>BACK</h4>
+                            </div>
+                            <div class="images_app3 d-flex justify-content-around align-items-center mt-4">
+                                <div><img src="images/logo_php_app.png" alt="PHP">
+                                    <p>PHP</p>
+                                </div>
+                                <div><img src="images/logo_sql_app.png" alt="MySQL">
+                                    <p>MySQL</p>
+                                </div>
+                                <div><img src="images/logo_python.png" alt="python">
+                                    <p>PYTHON</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="design2 carte">
+                            <div class="titre d-flex align-items-center mt-3 ms-3">
+                                <img src="images/logo_design.png" alt="logo design">
+                                <h4>DESIGN</h4>
+                            </div>
+                            <div class="images_app2 d-flex justify-content-around align-items-center mt-4">
+                                <div><img src="images/logo_illustrator.png" alt="illustrator">
+                                    <p>ILLUSTRATOR</p>
+                                </div>
+                                <div><img src="images/logo_indesign.png" alt="indesign">
+                                    <p>INDESIGN</p>
+                                </div>
+                                <div><img src="images/logo_photoshop.png" alt="photoshop">
+                                    <p>PHOTOSHOP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="audiovisuel2 carte">
+                            <div class="titre d-flex align-items-center mt-3 ms-3">
+                                <img src="images/logo_cam.png" alt="logo audiovisuel">
+                                <h4>AUDIOVISUEL</h4>
+                            </div>
+                            <div class="images_app4 d-flex justify-content-around align-items-center mt-4">
+                                <div><img src="images/logo_premiere.png" alt="premiere pro">
+                                    <p>PREMIERE PRO</p>
+                                </div>
+                                <div><img src="images/logo_after.png" alt="after effect">
+                                    <p>AFTER EFFECT</p>
+                                </div>
+                                <div><img src="images/logo_audition.png" alt="audition">
+                                    <p>AUDITION</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="propos" class="propos">
+                <div class="col-12 d-sm-none d-flex justify-content-center">
+                    <h2 class="m-0">À Propos</h2>
+                </div>
+                <div class="col-12 d-none d-sm-flex">
+                    <h2>À Propos</h2>
+                </div>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="presentation col-12 col-lg-8 d-sm-block d-none">
+                        <p>Moi c'est <span>Clément</span>. Je suis étudiant en 2e année (et major en 1ere) de BUT
+                            Métiers du Multimédia et de l’Internet (MMI). Je suis <span>passionné</span>
+                            par le développement web depuis le collège.</p>
+                        <p class="text-end">J’adore concevoir des projets personnels ou pour l’université, autonome ou
+                            en équipe,
+                            dans le but de <span>m’améliorer</span>.</p>
+                    </div>
+                    <div class="presentation2 col-12 d-sm-none d-block">
+                        <p>Moi c'est <span>Clément</span>. Je suis étudiant en 2e année (et major en 1ere) de BUT
+                            Métiers du Multimédia et de l’Internet (MMI). Je suis <span>passionné</span>
+                            par le développement web depuis le collège.</p>
+                        <p class="text-end">J’adore concevoir des projets personnels ou pour l’université, autonome ou
+                            en équipe,
+                            dans le but de <span>m’améliorer</span>.</p>
+                    </div>
+                    <div class="photoclem col-12 col-lg-4">
+                        <div class="d-flex justify-content-center">
+                            <div class="mask1"><img src="images/clement.png" alt="Photo de Clément Guérin"></div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact container-fluid">
+                <div class="col-12 d-sm-none d-flex justify-content-center">
+                    <h2 class="m-0">Contact</h2>
+                </div>
+                <div class="col-12 d-none d-sm-flex">
+                    <h2>Contact</h2>
+                </div>
+                <div class="infos_contact row d-none d-md-flex justify-content-around">
+                    <div class="w-75 d-flex justify-content-around">
+                        <div>
+                            <div class="info_contact d-flex align-items-center mail">
+                                <div><img src="images/logo_mail.png" alt="logo mail"></div>
+                                <h5><a href="mailto:clemguer09@gmail.com">clemguer09@gmail.com</a></h5>
+                            </div>
+                            <div class="info_contact d-flex align-items-center adresse">
+                                <div><img src="images/logo_adresse.png" alt="logo adresse"></div>
+                                <h5>10 avenue de Bures Cottage,<br>Bures-sur-Yvette 91440</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="info_contact d-flex align-items-center tel">
+                                <div><img src="images/logo_tel.png" alt="logo tenl"></div>
+                                <h5 class="text-end"><a href="tel:0769234422">07 69 23 44 22</a></h5>
+                            </div>
+                            <div class="info_contact d-flex align-items-center linkedin">
+                                <div><img src="images/logo_linkedin.webp" alt="logo linkedin"></div>
+                                <h5 class="text-end"><a href="https://www.linkedin.com/in/clement-guerin1/">Linkedin</a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="infos_contact row d-flex flex-column d-md-none justify-content-around">
+                    <div class="col-12 d-flex align-items-center flex-column">
+                        <div>
+                            <div class="info_contact d-flex align-items-center mail">
+                                <div><img src="images/logo_mail.png" alt="logo mail"></div>
+                                <h5><a href="mailto:clemguer09@gmail.com">clemguer09@gmail.com</a></h5>
+                            </div>
+                            <div class="info_contact d-flex align-items-center adresse">
+                                <div><img src="images/logo_adresse.png" alt="logo adresse"></div>
+                                <h5>10 avenue de Bures Cottage,<br>Bures-sur-Yvette 91440</h5>
+                            </div>
+                            <div class="info_contact d-flex align-items-center tel">
+                                <div><img src="images/logo_tel.png" alt="logo tenl"></div>
+                                <h5 class="text-end"><a href="tel:0769234422">07 69 23 44 22</a></h5>
+                            </div>
+                            <div class="info_contact d-flex align-items-center linkedin">
+                                <div><a href="https://www.linkedin.com/in/clement-guerin1/" target="_blank"><img
+                                            src="images/logo_linkedin.webp" alt="logo linkedin"></a></div>
+                                <h5 class="text-end"><a href="https://www.linkedin.com/in/clement-guerin1/"
+                                        target="_blank">Linkedin</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="voirCv col-12 d-flex align-items-center justify-content-center"><a
+                            class="btn btn-outline-dark" href="projets/CV_Clement_Guerin.pdf" role="button">Voir mon
+                            CV</a></div>
+                </div>
+            </section>
+            <section class="d-flex align-items-center justify-content-center mt-4">
+                <a href="#debut" class="p-0">
+                    <div class="fleche2"></div>
+                </a>
+            </section>
+            <section class="footer d-flex justify-content-center align-items-center">
+                <h6>Site réalisé par <b><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">@Clément Guérin</a></b> |
+                    Copyright 2022</h6>
+                <!-- Le lien n'est rien qu'une blague évidemment ;) -->
+            </section>
+        </main>
+
+
+
+
+
+    </div>
+
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+
+
+</body>
+
+</html>

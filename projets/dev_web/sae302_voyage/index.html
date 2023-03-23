@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Voyage - Accueil</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.volh').click(function(){
+                $('.vol').removeClass("active");
+                $('.hotel').removeClass("active");
+                $('.sejour').removeClass("active");
+                $(this).addClass("active");
+        });
+       
+            $('.vol').click(function(){
+                $('.volh').removeClass("active");
+                $('.hotel').removeClass("active");
+                $('.sejour').removeClass("active");
+                $(this).addClass("active");
+        });
+       
+            $('.hotel').click(function(){
+                $('.vol').removeClass("active");
+                $('.volh').removeClass("active");
+                $('.sejour').removeClass("active");
+                $(this).addClass("active");
+        });
+       
+            $('.sejour').click(function(){
+                $('.vol').removeClass("active");
+                $('.hotel').removeClass("active");
+                $('.volh').removeClass("active");
+                $(this).addClass("active");
+       
+        });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><img src="images/logo.png" alt="Logo de l'agence de voyage"></li>
+            <li><a href="#">TOUTES NOS DESTINATIONS</a></li>
+        </ul>
+        <nav>
+            <ul>
+                <li><a href="#"><img src="images/search.png" alt="Search"></a></li>
+                <li><a href="admin/formulaire-contact.html">SE CONNECTER <img src="images/fleche2.png" alt="fleche"></a></li>
+                <li><a href="#"><img src="images/telephone.png" alt="telephone"></a></li>
+                <li><a href="#"><img src="images/menu.png" alt="menu"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="images/cuba.jpg" alt="cuba"></div>
+                <div class="slide"><img src="images/plage.jpg" alt="plage"></div>
+                <div class="slide"><img src="images/montagne.jpg" alt="montagne"></div>
+            </div>
+            <a href="#voyages"><img src="images/fleche.png" alt="ceci est une fleche d'ancre patate"></a>
+        </div>
+        <div class="voyages" id="voyages">
+            <aside class="voyage">
+                <nav>
+                    <ul>
+                        <li class="volh active"><a href="#">Vol + Hôtel</a></li>
+                        <li class="vol"><a href="#">Vol</a></li>
+                        <li class="hotel"><a href="#">Hôtel</a></li>
+                        <li class="sejour"><a href="#">Séjour</a></li>
+                    </ul>
+                   
+                </nav>
+                <form action="#">
+                    <label>Départ</label>
+                    <input type="text" name="depart" placeholder="Ville ou aéroport">
+                    <select name="nombre">
+                        <option value="201">2 adultes, 1 chambre</option>
+                        <option value="211">2 adultes, 1 enfant, 1 chambre</option>
+                        <option value="221" selected>2 adultes, 2 enfants, 1 chambre</option>
+                        <option value="222">2 adultes, 2 enfants, 2 chambres</option>
+                        <option value="232">2 adultes, 3 enfants, 2 chambre</option>
+                        <option disabled>Après c'est trop la...</option>
+                    </select>
+                    <label>Destination</label>
+                    <input type="text" name="destination" placeholder="Où voulez-vous aller ?">
+                    <select name="classe">
+                        <option selected disabled>N'importe quelle classe</option>
+                        <option value="eco">Economique</option>
+                        <option value="premeco">Premium economique</option>
+                        <option value="busi">business</option>
+                        <option value="prem">première</option>
+                    </select>
+                    <div>
+                        <div class="agenda">
+                            <label>Date de départ</label>
+                            <input type="date" value="2022-04-08" min="2022-04-08" max="2024-12-31">
+                        </div>
+                        <div class="agenda">
+                            <label>Date de retour</label>
+                            <input type="date" value="2022-04-15" min="2022-04-08" max="2024-12-31">
+                        </div>
+                    </div>
+                    <a href="#">Plus de critères</a>
+                    <div>
+                        <input type="submit" value="Rechercher">
+                    </div>
+                </form>
+            </aside>
+            <div class="infos">
+                <h1>Partir en Europe</h1>
+                <section class="europe">
+                    <!-- <div class="partie1"> -->
+                        <article class="voyage-grid">
+                            <img src="images/amsterdam.jpg" alt="image voyage amsterdam">
+                            <a href="#"><div class="reserver"><p>RÉSERVER</p></div></a>
+                            <div class="prix">A partir de<br>500€</div>
+                            <h2>Voyage en Allemagne</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a justo est. Curabitur ut ipsum sed massa malesuada aliquam sit amet a quam. Maecenas fringilla lacinia neque, non egestas nulla scelerisque at. Quisque nec lectus eu magna aliquet ullamcorper. Ut erat justo, ornare ac purus eu, aliquam rutrum eros. Cras at ante purus. Quisque id elit eu quam vestibulum fringilla a quis leo. Pellentesque congue dolor arcu, eu euismod leo tempor quis. Duis pharetra nisi a auctor mattis.</p>
+                        </article>
+                        <article class="voyage-grid">
+                            <img src="images/Paris.jpg" alt="image voyage paris">
+                            <a href="#"><div class="reserver"><p>RÉSERVER</p></div></a>
+                            <div class="prix">A partir de<br>999€</div>
+                            <h2>Voyage en France</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a justo est. Curabitur ut ipsum sed massa malesuada aliquam sit amet a quam. Maecenas fringilla lacinia neque, non egestas nulla scelerisque at. Quisque nec lectus eu magna aliquet ullamcorper. Ut erat justo, ornare ac purus eu, aliquam rutrum eros. Cras at ante purus. Quisque id elit eu quam vestibulum fringilla a quis leo. Pellentesque congue dolor arcu, eu euismod leo tempor quis. Duis pharetra nisi a auctor mattis.</p>
+                        </article>
+                        <article class="voyage-grid">
+                            <img src="images/italie.jpg" alt="image voyage italie">
+                            <a href="#"><div class="reserver"><p>RÉSERVER</p></div></a>
+                            <div class="prix">A partir de<br>1450€</div>
+                            <h2>Voyage en Italie</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a justo est. Curabitur ut ipsum sed massa malesuada aliquam sit amet a quam. Maecenas fringilla lacinia neque, non egestas nulla scelerisque at. Quisque nec lectus eu magna aliquet ullamcorper. Ut erat justo, ornare ac purus eu, aliquam rutrum eros. Cras at ante purus. Quisque id elit eu quam vestibulum fringilla a quis leo. Pellentesque congue dolor arcu, eu euismod leo tempor quis. Duis pharetra nisi a auctor mattis.</p>
+                        </article>
+                    <!--</div>
+                    <div class="partie1"> -->
+                        <article class="voyage-grid">
+                            <img src="images/suisse.jpg" alt="image voyage suisse">
+                            <a href="#"><div class="reserver"><p>RÉSERVER</p></div></a>
+                            <div class="prix">A partir de<br>500€</div>
+                            <h2>Voyage en Suisse</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a justo est. Curabitur ut ipsum sed massa malesuada aliquam sit amet a quam. Maecenas fringilla lacinia neque, non egestas nulla scelerisque at. Quisque nec lectus eu magna aliquet ullamcorper. Ut erat justo, ornare ac purus eu, aliquam rutrum eros. Cras at ante purus. Quisque id elit eu quam vestibulum fringilla a quis leo. Pellentesque congue dolor arcu, eu euismod leo tempor quis. Duis pharetra nisi a auctor mattis.</p>
+                        </article>
+                        <article class="voyage-grid">
+                            <img src="images/croatie.jpg" alt="image voyage croatie">
+                            <a href="#"><div class="reserver"><p>RÉSERVER</p></div></a>
+                            <div class="prix">A partir de<br>500€</div>
+                            <h2>Voyage en Croatie</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a justo est. Curabitur ut ipsum sed massa malesuada aliquam sit amet a quam. Maecenas fringilla lacinia neque, non egestas nulla scelerisque at. Quisque nec lectus eu magna aliquet ullamcorper. Ut erat justo, ornare ac purus eu, aliquam rutrum eros. Cras at ante purus. Quisque id elit eu quam vestibulum fringilla a quis leo. Pellentesque congue dolor arcu, eu euismod leo tempor quis. Duis pharetra nisi a auctor mattis.</p>
+                        </article>
+                        <article class="voyage-grid">
+                            <img src="images/roumanie.jpg" alt="image voyage roumanie">
+                            <a href="#"><div class="reserver"><p>RÉSERVER</p></div></a>
+                            <div class="prix">A partir de<br>500€</div>
+                            <h2>Voyage en Roumanie</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a justo est. Curabitur ut ipsum sed massa malesuada aliquam sit amet a quam. Maecenas fringilla lacinia neque, non egestas nulla scelerisque at. Quisque nec lectus eu magna aliquet ullamcorper. Ut erat justo, ornare ac purus eu, aliquam rutrum eros. Cras at ante purus. Quisque id elit eu quam vestibulum fringilla a quis leo. Pellentesque congue dolor arcu, eu euismod leo tempor quis. Duis pharetra nisi a auctor mattis.</p>
+                        </article>
+                    <!-- </div> -->
+                </section>
+                <section class="club">
+                    <h1>Spécial club</h1>
+                <section class="europe">
+                    <!-- <div class="partie1"> -->
+                        <article class="voyage-grid zoom">
+                            <img src="images/amsterdam.jpg" alt="image voyage amsterdam">
+                            <div class="prix">A partir de<br>500€</div>
+                            <h2>Voyage en Allemagne</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a justo est. Curabitur ut ipsum sed massa malesuada aliquam sit amet a quam. Maecenas fringilla lacinia neque, non egestas nulla scelerisque at. Quisque nec lectus eu magna aliquet ullamcorper. Ut erat justo, ornare ac purus eu, aliquam rutrum eros. Cras at ante purus. Quisque id elit eu quam vestibulum fringilla a quis leo. Pellentesque congue dolor arcu, eu euismod leo tempor quis. Duis pharetra nisi a auctor mattis.</p>
+                        </article>
+                        <article class="voyage-grid zoom">
+                            <img src="images/Paris.jpg" alt="image voyage france">
+                            <div class="prix">A partir de<br>999€</div>
+                            <h2>Voyage en France</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a justo est. Curabitur ut ipsum sed massa malesuada aliquam sit amet a quam. Maecenas fringilla lacinia neque, non egestas nulla scelerisque at. Quisque nec lectus eu magna aliquet ullamcorper. Ut erat justo, ornare ac purus eu, aliquam rutrum eros. Cras at ante purus. Quisque id elit eu quam vestibulum fringilla a quis leo. Pellentesque congue dolor arcu, eu euismod leo tempor quis. Duis pharetra nisi a auctor mattis.</p>
+                        </article>
+                        <article class="voyage-grid zoom">
+                            <img src="images/italie.jpg" alt="image voyage italie">
+                            <div class="prix">A partir de<br>1450€</div>
+                            <h2>Voyage en italie</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a justo est. Curabitur ut ipsum sed massa malesuada aliquam sit amet a quam. Maecenas fringilla lacinia neque, non egestas nulla scelerisque at. Quisque nec lectus eu magna aliquet ullamcorper. Ut erat justo, ornare ac purus eu, aliquam rutrum eros. Cras at ante purus. Quisque id elit eu quam vestibulum fringilla a quis leo. Pellentesque congue dolor arcu, eu euismod leo tempor quis. Duis pharetra nisi a auctor mattis.</p>
+                        </article>
+                    <!--</div>
+                    <div class="partie1"> -->
+                        <article class="voyage-grid zoom">
+                            <img src="images/suisse.jpg" alt="image voyage suisse">
+                            <div class="prix">A partir de<br>500€</div>
+                            <h2>Voyage en Suisse</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a justo est. Curabitur ut ipsum sed massa malesuada aliquam sit amet a quam. Maecenas fringilla lacinia neque, non egestas nulla scelerisque at. Quisque nec lectus eu magna aliquet ullamcorper. Ut erat justo, ornare ac purus eu, aliquam rutrum eros. Cras at ante purus. Quisque id elit eu quam vestibulum fringilla a quis leo. Pellentesque congue dolor arcu, eu euismod leo tempor quis. Duis pharetra nisi a auctor mattis.</p>
+                        </article>
+                        <article class="voyage-grid zoom">
+                            <img src="images/croatie.jpg" alt="image voyage croatie">
+                            <div class="prix">A partir de<br>500€</div>
+                            <h2>Voyage en Croatie</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a justo est. Curabitur ut ipsum sed massa malesuada aliquam sit amet a quam. Maecenas fringilla lacinia neque, non egestas nulla scelerisque at. Quisque nec lectus eu magna aliquet ullamcorper. Ut erat justo, ornare ac purus eu, aliquam rutrum eros. Cras at ante purus. Quisque id elit eu quam vestibulum fringilla a quis leo. Pellentesque congue dolor arcu, eu euismod leo tempor quis. Duis pharetra nisi a auctor mattis.</p>
+                        </article>
+                        <article class="voyage-grid zoom">
+                            <img src="images/roumanie.jpg" alt="image voyage roumanie">
+                            <div class="prix">A partir de<br>500€</div>
+                            <h2>Voyage en Roumanie</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a justo est. Curabitur ut ipsum sed massa malesuada aliquam sit amet a quam. Maecenas fringilla lacinia neque, non egestas nulla scelerisque at. Quisque nec lectus eu magna aliquet ullamcorper. Ut erat justo, ornare ac purus eu, aliquam rutrum eros. Cras at ante purus. Quisque id elit eu quam vestibulum fringilla a quis leo. Pellentesque congue dolor arcu, eu euismod leo tempor quis. Duis pharetra nisi a auctor mattis.</p>
+                        </article>
+                    <!-- </div> -->
+                </section>
+                
+                </section>
+                <section class="quisommesnous">
+                    <div>
+                        <h1>Qui sommes-nous</h1>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                    </div>
+                    <div>
+                        <div class="i12">
+                            <img src="images/1.jpg" alt="1">
+                            <img src="images/2.jpg" alt="2">
+                        </div>
+                        <img src="images/3.jpg" alt="3">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="ligne1">
+            <div class="villes">
+                <div>
+                    <img src="images/logo.png" alt="Logo de l'agence">
+                    <article>
+                        <h2>Bordeaux</h2>
+                        <p>26, cours du chapeau-Rouge</p>
+                        <p>33000 Bordeaux</p>
+                        <p>05 65 45 32 45</p>
+                    </article>
+                    <article>
+                        <h2>Lille</h2>
+                        <p>26, cours du chapeau-Rouge</p>
+                        <p>33000 Bordeaux</p>
+                        <p>05 65 45 32 45</p>
+                    </article>
+                    <article>
+                        <h2>Lyon</h2>
+                        <p>26, cours du chapeau-Rouge</p>
+                        <p>33000 Bordeaux</p>
+                        <p>05 65 45 32 45</p>
+                    </article>
+                </div>
+                <div>
+                    <article>
+                        <h2>Marseille</h2>
+                        <p>26, cours du chapeau-Rouge</p>
+                        <p>33000 Bordeaux</p>
+                        <p>05 65 45 32 45</p>
+                    </article>
+                    <article>
+                        <h2>Nice</h2>
+                        <p>26, cours du chapeau-Rouge</p>
+                        <p>33000 Bordeaux</p>
+                        <p>05 65 45 32 45</p>
+                    </article>
+                    <article>
+                        <h2>Paris</h2>
+                        <p>42, avenue de la richesse</p>
+                        <p>75016 Paris</p>
+                        <p>09 45 89 35 56</p>
+                    </article>
+                    <article>
+                        <h2>Toulouse</h2>
+                        <p>26, cours du chapeau-Rouge</p>
+                        <p>87000 Toulouse</p>
+                        <p>05 65 45 32 45</p>
+                    </article>
+                </div>
+            </div>
+            <div class="reseaux">
+                <ul>
+                    <li><a href=""><img src="images/facebook.png" alt="facebook"></a></li>
+                    <li><a href=""><img src="images/instagram.png" alt="instagram"></a></li>
+                    <li><a href=""><img src="images/twitter.png" alt="twitter"></a></li>
+                    <li><a href=""><img src="images/youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="liens">
+            <a href="">Espace client</a><p>·</p>
+            <a href="">Nous rejoindre</a><p>·</p>
+            <a href="">Mentions légales</a><p>·</p>
+            <a href="">Politique de confidentialité</a><p>·</p>
+            <a href="">Gestion des cookies</a>
+        </div>
+    </footer>
+</body>
+</html>

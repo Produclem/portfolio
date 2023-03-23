@@ -1,0 +1,174 @@
+/* ---------------- IMPORTS ----------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+/* ------------------------------------------ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+header {
+    background-color: #FAFAFA;
+    box-shadow: #000000b7 -5px 5px 15px;
+}
+
+header .droite form input {
+    background: url(images/logo-search2.png) no-repeat;
+    background-position: left;
+    background-size: 30px;
+    padding: 10px 10px 10px 30px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: inset 2px 2px 5px #787878aa;
+    min-width: max-content;
+    width: 60%;
+    font: 16px 'Poppins';
+}
+
+header .droite form input:focus {
+    outline-color: #FFEBB6;
+}
+
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+h1,
+.formu form input,
+label,
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+.formu form input:focus {
+    outline-color: #FFEBB6;
+}
+
+.form-control:focus {
+    border-color: #FFEBB6 !important;
+    box-shadow: 0 0 5px #FFEBB6 !important;
+}
+
+.btn-connexion {
+    background-color: #FFEBB6 !important;
+}
+
+.btn-fermer {
+    background-color: #cecece !important;
+}
+
+#imageupload {
+    height: 200px;
+    width: 100%;
+}
+/* -------------------------------------------- */
+
+
+/* ---------------------- MAIN -------------------------- */
+
+.titre img {
+    width: 35px;
+}
+
+section.coeur {
+    background-color: #FAE1DD;
+    box-shadow: #000000b7 -5px 5px 15px;
+}
+
+section.qualite {
+    background-color: #FFEBB6;
+    box-shadow: #000000b7 -5px 5px 15px;
+}
+
+.image1 {
+    height: auto;
+    width: 300px;
+}
+/* ------------------------------------------------------- */
+
+
+/* ------------------------------ SYSTEME DE LIKES QUI N'EST PAS OPERATIONNEL ! ---------------------------- */
+
+.vote {
+    background: azure;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.vote_bar {
+    height: 4px;
+    width: 150px;
+    background-color: rgb(198, 76, 76);
+}
+
+.vote_progress {
+    width: 0%;
+    height: 4px;
+    background: rgb(81, 186, 88);
+}
+
+.vote_btn {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+/* ----------- LIKE ----------- */
+
+.vote_like {
+    width: 30px;
+    height: 30px;
+    background-image: url('images/logo-heart-vide.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.vote_like:hover {
+    transform: scale(0.9);
+}
+
+.vote_like:active {
+    background-image: url('images/logo-heart.png');
+}
+
+/* ----------- DISLIKE ----------- */
+.vote_dislike {
+    width: 30px;
+    height: 30px;
+    background-image: url('images/logo-heartb-vide.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.vote_dislike:hover {
+    transform: scale(0.9);
+}
+
+.vote_dislike:active {
+    background-image: url('images/logo-heartb.png');
+}
+
+/* -------------------------------------------------------------------- */
+
+
+
+/*------------------------------------ FOOTER -------------------------------------*/
+
+.txttorn {
+    text-align: justify;
+}
+
+/* -------------------------------------------------------------------- */
